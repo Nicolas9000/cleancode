@@ -16,4 +16,7 @@ describe("Figure result", () => {
   it("Full figure", () => {
     expect(computeFiguresPoint([1, 1, 1, 2, 2])).toBe(30);
   });
+  it("Grande suite", () => {
+    expect(computeFiguresPoint([2, 3, 4, 5, 6])).toBe(40);
+  });
 });
