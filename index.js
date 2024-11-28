@@ -3,6 +3,15 @@ module.exports = function computeFiguresPoint(dices) {
     const isBrelan = dices.filter((dice) => dice === dices[i]).length === 3;
     const isCarre = dices.filter((dice) => dice === dices[i]).length === 4;
     const isYamsFigure = dices.filter((dice) => dice === dices[i]).length === 5;
+
+    const findDifferentDice = dices.find((dice) => dice !== dices[i]);
+
+    if (
+      isBrelan &&
+      dices.filter((dice) => dice === findDifferentDice).length === 2
+    ) {
+      return 30;
+    }
     if (isBrelan) {
       return 28;
     }

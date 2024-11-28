@@ -13,4 +13,7 @@ describe("Figure result", () => {
   it("Carré figure", () => {
     expect(computeFiguresPoint([1, 1, 1, 1, 5])).toBe(35);
   });
+  it("Full figure", () => {
+    expect(computeFiguresPoint([1, 1, 1, 2, 2])).toBe(30);
+  });
 });
