@@ -7,4 +7,7 @@ describe("Figure result", () => {
   it("YAMS figure", () => {
     expect(computeFiguresPoint([1, 1, 1, 1, 1])).toBe(50);
   });
+  it("Brelan figure", () => {
+    expect(computeFiguresPoint([1, 1, 1, 4, 5])).toBe(28);
+  });
 });
